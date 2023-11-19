@@ -10,10 +10,18 @@
       "plugin:@typescript-eslint/eslint-recommended"
     ],
     "rules" : {
-        "no-console": 2
+        "no-console": 1
     },
     "env": {
       "jest/globals": true,
       "node": true
+    },
+     "overrides": [
+    {
+      "files": ["*.interface.ts"],
+      "rules": {
+        "no-unused-vars": "off"
+      }
     }
+  ]
   }

@@ -6,5 +6,5 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
-     "prettier.configPath": "config/formatter/.prettierrc"
+     "prettier.configPath": "config/formatter/.prettierrc",
 }

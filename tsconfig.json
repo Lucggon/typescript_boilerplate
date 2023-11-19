@@ -10,8 +10,10 @@
       "esModuleInterop": true,
       "noUnusedLocals": true,
       "types": ["node", "jest"],
-      "skipLibCheck": true
-    },
+      "skipLibCheck": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+      },
     "include": ["src/**/*"],
     "exclude": ["src/**/*.spec.ts"]
   }
