@@ -12,7 +12,7 @@ defineFeature(feature, test => {
         });
 
         then('The return should be true', () => {
-            expect(true).toBe(health.getStatus());
+          expect(true).toBe(health.getStatus());
         });
     });
 });
