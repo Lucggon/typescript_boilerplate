@@ -8,7 +8,7 @@
     },
      "prettier.configPath": "config/formatter/.prettierrc",
       "cucumberautocomplete.steps": [
-        "tests/acceptanceTests/steps/**.ts",
+        "tests/acceptanceTests/steps/*.*.ts",
     ],
     "cucumberautocomplete.syncfeatures": "tests/acceptanceTests/**/*.feature",
     "cucumberautocomplete.strictGherkinCompletion": true
