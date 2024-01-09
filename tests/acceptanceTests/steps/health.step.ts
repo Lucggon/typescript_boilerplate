@@ -1,6 +1,7 @@
 import { Given, Then } from '@cucumber/cucumber';
-import { HealthCheck } from '../../../src/app/HealthCheck';
 import { expect } from 'chai';
+
+import { HealthCheck } from '../../../src/app/HealthCheck';
 
 let healthCheck: HealthCheck;
 Given('I call HealthCheck', () => {

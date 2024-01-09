@@ -1,15 +1,7 @@
 {
-  "eslint.options": { "overrideConfigFile": "config/linter/.eslintrc" },
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSaveMode": "modifications",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-     "prettier.configPath": "config/formatter/.prettierrc",
-      "cucumberautocomplete.steps": [
-        "tests/acceptanceTests/steps/*.*.ts",
-    ],
-    "cucumberautocomplete.syncfeatures": "tests/acceptanceTests/**/*.feature",
-    "cucumberautocomplete.strictGherkinCompletion": true
+  "eslint.options": {
+    "overrideConfigFile": "./config/linter/.eslintrc",
+  },
+  "cucumberautocomplete.syncfeatures": "tests/acceptanceTests/**/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true
 }

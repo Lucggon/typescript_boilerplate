@@ -1,4 +1,5 @@
 import { describe } from 'node:test';
+
 import { HealthCheck } from '../../src/app/HealthCheck';
 
 describe('Health check', () => {

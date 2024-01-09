@@ -1,10 +1,11 @@
-import { Logger } from './Logger.interface';
 import {
   createLogger,
-  transports,
   format,
   Logger as LoggerWinston,
+  transports,
 } from 'winston';
+
+import { Logger } from './Logger.interface';
 import { LogLevels } from './Logger.types';
 
 export class WinstonLogger implements Logger {

@@ -1,13 +1,15 @@
-import { Given, Then, BeforeAll, AfterAll } from '@cucumber/cucumber';
-import request from 'supertest';
+import { AfterAll,BeforeAll, Given, Then } from '@cucumber/cucumber';
 import assert from 'assert';
-import express, { Express, Request, Response } from 'express';
-import { Server } from 'http';
+import express, { Express } from 'express';
+import request from 'supertest';
+
+import { Server } from '../../../src/app/Server';
 
 const server: Express = express();
+const finalServer:Server = new Server();
 let _request: request.Test;
 let _response: request.Response;
-let onServer: Server;
+
 
 Given('I send a GET request to {string}', (route: string) => {
   _request = request(server).get(route);
@@ -19,13 +21,8 @@ Then('The response status code should be {int}', async (value: number) => {
 });
 
 BeforeAll(() => {
-  onServer = server.listen(8000, () => {
-    return 200;
-  });
-  server.get('/status', (req: Request, res: Response) => {
-    res.status(200).send();
-  });
+  finalServer.listen();
 });
 AfterAll(() => {
-  onServer.close();
+  finalServer.stop();
 });
