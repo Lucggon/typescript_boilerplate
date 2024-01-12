@@ -1,9 +1,4 @@
-import {
-  createLogger,
-  format,
-  Logger as LoggerWinston,
-  transports,
-} from 'winston';
+import { createLogger, format, Logger as LoggerWinston, transports } from 'winston';
 
 import { Logger } from './Logger.interface';
 import { LogLevels } from './Logger.types';

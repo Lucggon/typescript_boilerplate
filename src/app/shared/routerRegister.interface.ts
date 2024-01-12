@@ -1,5 +1,5 @@
 import { Router } from 'express';
 
-export interface RouterRegister {
-  register(router: Router): void;
+export abstract class RouterRegister {
+  abstract register(router: Router): void;
 }

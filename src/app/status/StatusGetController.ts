@@ -1,6 +1,6 @@
+import { Service } from 'diod';
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-import { Service } from 'typedi';
 
 import { Controller } from '../shared/controller.interface';
 
